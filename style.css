@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    background-color: #191970;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: clamp(1rem,2.2rem,3vw);
+    font-weight: bolder;
+}
+.options{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options div{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    margin: 4vw;
+    transition: all 0.2s;
+}
+
+#stone{
+    background-image: url("img/Gemini_Generated_Image_7nrjsj7nrjsj7nrj.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+#paper{
+    background-image: url("img/Gemini_Generated_Image_8y3src8y3src8y3s.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+#scissors{
+    background-image: url("img/Gemini_Generated_Image_qei6nxqei6nxqei6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.choice:active{
+    border: 8px solid black;
+    transform: scale(0.95);
+}
+
+.score-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.user-score,.comp-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-score,.c-score{
+    font-size: clamp(1rem,2.5rem,3rem);
+}
+.u-text,.c-text{
+    font-size: clamp(1rem,2rem,2.5rem);
+}
+
+.res-box{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.result{
+    /* height: 8vh; */
+    /* width: 20vw; */
+    background-color: #191970;
+    padding: 15px 12px;
+    color: white;
+    font-size: clamp(1rem,1.4rem,3rem);
+    border-radius: 5px;
+}
+
+#reset-btn{
+    background-color: #191970;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: clamp(1rem,1.3rem,3rem);
+}

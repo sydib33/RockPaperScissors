@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="content"> Rock Paper Scissors</div>
+    </header>
+    <!-- buttons -->
+     <section class="options">
+        <div class="choice" id="stone"></div>
+        <div class="choice" id="paper"></div>
+        <div class="choice" id="scissors"></div>
+     </section>
+
+     <!-- scorecard -->
+     <div class="score-card">
+        <div class="user-score">
+            <p class="u-text">You</p>
+            <p class="u-score">0</p>
+        </div>
+
+        <div class="comp-score">
+             <p class="c-text">Comp</p>
+            <p class="c-score">0</p>
+        </div>
+     </div>
+
+     <!-- result -->
+      <section class="res-box">
+      <div class="result">
+        Pick Your Move
+      </div>
+      <button id="reset-btn" onclick="reset()">Reset</button>
+      </section>
+    <script src="./script.js"></script>
+</body>
+</html>
