@@ -15,7 +15,7 @@ const Comp_choice = ()=>{
 }
 
 
-drawGame = ()=>{
+const drawGame = ()=>{
     msg.innerText = "Its draw.";
     msg.style.backgroundColor = "#191970"
 }
